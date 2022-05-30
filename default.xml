@@ -11,7 +11,7 @@
   <remote fetch="git://github.com/embeddedartists"  name="EA"/>
   <remote fetch="git://github.com/murata-wireless"  name="Murata"/>
   <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
-  <remote fetch="https://github.com/PGSEnergy" name="PGS"/>
+  <remote fetch="https://github.com/artbyk" name="ART"/>
 
   <project remote="yocto" revision="64a257fa22126c4a40ff7e03424a404e360ebe1e" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="407c6cf408969445031a492e2d25e0e2749582ea" name="meta-freescale" path="sources/meta-freescale"/>
@@ -35,8 +35,8 @@
 
 
   <project remote="Murata" name="meta-murata-wireless" path="sources/meta-murata-wireless" revision="67db0fa461946021e8d68edf7e24d38eff7dad80" />
-  <project remote="PGS" name="meta-vf" path="sources/meta-vf" revision="322a05e06096d7dbc1bc64ff0472dd36a2a3691b"/>
-  <project remote="PGS" name="meta-python_st" path="sources/meta-python_st" revision="23bd0fd495e91aea7f8bbb8e7b1f7da882807543">
+  <project remote="ART" name="meta_vf" path="sources/meta-vf" revision="4d20f58697cc2f29f362b3553e74d76e82883d3f"/>
+  <project remote="ART" name="meta_python" path="sources/meta-python_st" revision="abd16ecaafdb44ab636ecdc0ec457d0f2de342e9">
     <copyfile src="conf/machine/imx6sxea-com.conf" dest="sources/meta-ea/conf/machine/imx6sxea-com.conf"/>
     <copyfile src="recipes-ea/images/ea-image-base.bb" dest="sources/meta-ea/recipes-ea/images/ea-image-base.bb"/>
     <copyfile src="ea-setup-release.sh" dest="ea-setup-release.sh"/>
